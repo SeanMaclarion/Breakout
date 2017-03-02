@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class Ball : MonoBehaviour {
 
+   public Vector2 startingVelocity = new Vector2(15, -20);
+
 	// Use this for initialization
 	void Start ()
     {
-        GetComponent<Rigidbody2D>().velocity = new Vector2(5,-20);
+        GetComponent<Rigidbody2D>().velocity = startingVelocity;
 	}
 	// Update is called once per frame
 	void Update ()
