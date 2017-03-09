@@ -21,6 +21,7 @@ public class Brick : MonoBehaviour
         if (health == 0)
         {
             gameObject.SetActive(false);
+            FindObjectOfType<Ball>().YouBrokeABrick();
         }
     }
 }
